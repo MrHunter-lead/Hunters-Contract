@@ -1,0 +1,128 @@
+{
+  "btcPrice": 66532,
+  "ethPrice": 1987.03,
+  "solPrice": 81.88,
+  "decisions": {
+    "btc": "BUY",
+    "eth": "BUY",
+    "sol": "BUY"
+  },
+  "decision": "BUY",
+  "reasoning": "Цена биткоина снижается, но при этом волатильность остается низкой, что может указывать на потенциал для разворота вверх. Эфир также демонстрирует снижение, но его волатильность средняя, что может означать готовность к коррекции. Солана следует аналогичной тенденции, сохраняя низкую волатильность, что может быть сигналом для покупки перед потенциальным ростом.",
+  "balance": 14.9982946,
+  "buyCount": 6,
+  "sellCount": 0,
+  "waitCount": 0,
+  "totalTx": 6,
+  "lastUpdate": "2026-03-29T13:58:27.093Z",
+  "transactions": [
+    {
+      "id": "1774792707093-sol",
+      "time": "18:58:26",
+      "coin": "SOL",
+      "decision": "BUY",
+      "price": 81.88,
+      "txHash": "4KVw679EQGWkSDJpLJr6imVRfrnRzcjyTd1ENP69BR1KHnk7SKmqUsRkN84WEP5oNC8W5iV9XWP3kfyr65UJA7BR"
+    },
+    {
+      "id": "1774792707093-eth",
+      "time": "18:58:26",
+      "coin": "ETH",
+      "decision": "BUY",
+      "price": 1987.03,
+      "txHash": "4KVw679EQGWkSDJpLJr6imVRfrnRzcjyTd1ENP69BR1KHnk7SKmqUsRkN84WEP5oNC8W5iV9XWP3kfyr65UJA7BR"
+    },
+    {
+      "id": "1774792707093-btc",
+      "time": "18:58:26",
+      "coin": "BTC",
+      "decision": "BUY",
+      "price": 66532,
+      "txHash": "4KVw679EQGWkSDJpLJr6imVRfrnRzcjyTd1ENP69BR1KHnk7SKmqUsRkN84WEP5oNC8W5iV9XWP3kfyr65UJA7BR"
+    },
+    {
+      "id": "1774792675870-sol",
+      "time": "18:57:54",
+      "coin": "SOL",
+      "decision": "WAIT",
+      "price": 81.89,
+      "txHash": "5vccTvBtqziWMNZ2jXhkpwvP18y2vYKRKGYNLsyi8tvmNKLJRF2PFDgHa3UdLeK91HwDW9Qeww9XVsGtHSrxBMnZ"
+    },
+    {
+      "id": "1774792675870-eth",
+      "time": "18:57:54",
+      "coin": "ETH",
+      "decision": "SELL",
+      "price": 1987.52,
+      "txHash": "5vccTvBtqziWMNZ2jXhkpwvP18y2vYKRKGYNLsyi8tvmNKLJRF2PFDgHa3UdLeK91HwDW9Qeww9XVsGtHSrxBMnZ"
+    },
+    {
+      "id": "1774792675870-btc",
+      "time": "18:57:54",
+      "coin": "BTC",
+      "decision": "BUY",
+      "price": 66543,
+      "txHash": "5vccTvBtqziWMNZ2jXhkpwvP18y2vYKRKGYNLsyi8tvmNKLJRF2PFDgHa3UdLeK91HwDW9Qeww9XVsGtHSrxBMnZ"
+    },
+    {
+      "id": "1774792644772-sol",
+      "time": "18:57:23",
+      "coin": "SOL",
+      "decision": "SELL",
+      "price": 81.89,
+      "txHash": "3Rvz3eL3hHzqG6m1XtScGkPWZvAHM43uHtuA9XGUBwjRENeuhfkt3CQpCVMvNP4uB64sdK5hqTRZTQEJys5SWLdS"
+    },
+    {
+      "id": "1774792644772-eth",
+      "time": "18:57:23",
+      "coin": "ETH",
+      "decision": "SELL",
+      "price": 1987.52,
+      "txHash": "3Rvz3eL3hHzqG6m1XtScGkPWZvAHM43uHtuA9XGUBwjRENeuhfkt3CQpCVMvNP4uB64sdK5hqTRZTQEJys5SWLdS"
+    },
+    {
+      "id": "1774792644772-btc",
+      "time": "18:57:23",
+      "coin": "BTC",
+      "decision": "BUY",
+      "price": 66543,
+      "txHash": "3Rvz3eL3hHzqG6m1XtScGkPWZvAHM43uHtuA9XGUBwjRENeuhfkt3CQpCVMvNP4uB64sdK5hqTRZTQEJys5SWLdS"
+    },
+    {
+      "id": "1774792613395-sol",
+      "time": "18:56:52",
+      "coin": "SOL",
+      "decision": "SELL",
+      "price": 81.91,
+      "txHash": "3nM1JjsREuHpbxTMg4Cs5SsuuukGZ4BVELwj7HTbUbnvdZBqZApu8PBJUoKwM2WaWx743nCwuxfwM95tkL7o57HE"
+    },
+    {
+      "id": "1774792613395-eth",
+      "time": "18:56:52",
+      "coin": "ETH",
+      "decision": "SELL",
+      "price": 1989.16,
+      "txHash": "3nM1JjsREuHpbxTMg4Cs5SsuuukGZ4BVELwj7HTbUbnvdZBqZApu8PBJUoKwM2WaWx743nCwuxfwM95tkL7o57HE"
+    },
+    {
+      "id": "1774792613395-btc",
+      "time": "18:56:52",
+      "coin": "BTC",
+      "decision": "BUY",
+      "price": 66569,
+      "txHash": "3nM1JjsREuHpbxTMg4Cs5SsuuukGZ4BVELwj7HTbUbnvdZBqZApu8PBJUoKwM2WaWx743nCwuxfwM95tkL7o57HE"
+    }
+  ],
+  "walletAddress": "3nD6vntJ92yrhgKU1iEGKnN726ZoW66TxEQ8foHLehLd",
+  "contractAddress": "AiPbAtUTRhT1bBSeoLTNgN5ajibLKg2KeHQj4gX4ZYe9",
+  "trends": {
+    "btc": "ПАДЕНИЕ -0.550% за 10 проверок",
+    "eth": "ПАДЕНИЕ -2.213% за 10 проверок",
+    "sol": "ПАДЕНИЕ -2.057% за 10 проверок"
+  },
+  "volatility": {
+    "btc": "LOW",
+    "eth": "MEDIUM",
+    "sol": "LOW"
+  }
+}

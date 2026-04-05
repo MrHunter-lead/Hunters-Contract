@@ -1,0 +1,6 @@
+.env
+wallet.json
+state-account.json
+node_modules/
+hunters-contract/node_modules/
+hunters-contract/target/

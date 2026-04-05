@@ -1,0 +1,328 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Solana-inspired dark theme */
+  --background: #0a0a0f;
+  --foreground: #ffffff;
+  --card: rgba(20, 20, 30, 0.8);
+  --card-foreground: #ffffff;
+  --popover: #0a0a0f;
+  --popover-foreground: #ffffff;
+  --primary: #9945FF;
+  --primary-foreground: #ffffff;
+  --secondary: rgba(153, 69, 255, 0.1);
+  --secondary-foreground: #9945FF;
+  --muted: rgba(255, 255, 255, 0.05);
+  --muted-foreground: rgba(255, 255, 255, 0.6);
+  --accent: #14F195;
+  --accent-foreground: #0a0a0f;
+  --destructive: #FF4560;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: #9945FF;
+  --radius: 0.75rem;
+  
+  /* Solana palette */
+  --solana-purple: #9945FF;
+  --solana-green: #14F195;
+  --solana-blue: #00D1FF;
+  --deep-dark: #0a0a0f;
+  --card-dark: #14141e;
+  --glow-green: #14F195;
+  --glow-red: #FF4560;
+  --glow-amber: #FFB800;
+  
+  /* Chart colors */
+  --chart-1: #9945FF;
+  --chart-2: #00D1FF;
+  --chart-3: #14F195;
+  --chart-4: #FFB800;
+  --chart-5: #FF4560;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-space), 'Space Mono', monospace;
+  --font-display: var(--font-syne), system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply text-foreground;
+    background: var(--background);
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-syne), system-ui, sans-serif;
+  }
+  
+  .text-gradient-solana {
+    background: linear-gradient(135deg, #9945FF 0%, #14F195 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-solana {
+    background: linear-gradient(135deg, #9945FF 0%, #14F195 100%);
+  }
+  
+  .border-gradient-solana {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--card-dark), var(--card-dark)) padding-box,
+                linear-gradient(135deg, #9945FF 0%, #14F195 100%) border-box;
+  }
+  
+  .glass-card {
+    background: rgba(20, 20, 30, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .glass-card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .glass-card-hover:hover {
+    background: rgba(25, 25, 40, 0.8);
+    border-color: rgba(153, 69, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .glow-green {
+    box-shadow: 0 0 20px rgba(20, 241, 149, 0.4), 
+                0 0 40px rgba(20, 241, 149, 0.2),
+                0 0 60px rgba(20, 241, 149, 0.1);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 20px rgba(255, 69, 96, 0.4), 
+                0 0 40px rgba(255, 69, 96, 0.2),
+                0 0 60px rgba(255, 69, 96, 0.1);
+  }
+  
+  .glow-amber {
+    box-shadow: 0 0 20px rgba(255, 184, 0, 0.4), 
+                0 0 40px rgba(255, 184, 0, 0.2),
+                0 0 60px rgba(255, 184, 0, 0.1);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(153, 69, 255, 0.4), 
+                0 0 40px rgba(153, 69, 255, 0.2),
+                0 0 60px rgba(153, 69, 255, 0.1);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+  
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite 1s;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-dash {
+    animation: dash 20s linear infinite;
+  }
+  
+  .animate-data-flow {
+    animation: data-flow 3s linear infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; filter: brightness(1); }
+  50% { opacity: 0.8; filter: brightness(1.2); }
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: -1000; }
+}
+
+@keyframes data-flow {
+  0% { transform: translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #9945FF, #14F195);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Grid overlay */
+.grid-overlay {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Particle canvas */
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Animation classes for scroll-triggered animations */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-scale {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Legacy classes - keep for compatibility */
+.section-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-animate {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-animate.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Row animation for transaction log */
+.row-animate {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.row-animate.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Light section variant */
+.section-light {
+  background: #f8f8fc;
+  color: #0a0a0f;
+}
+
+.section-light .glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.08);
+}
