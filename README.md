@@ -13,7 +13,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 <!-- Замените # на реальные ссылки перед сдачей -->
-[📹 Demo Video](https://youtu.be/REPLACE_ME) · [📋 Smart Contract](#smart-contract)
+[📹 Demo Video](https://youtu.be/wGgmvdY7sSU) · [💬 Telegram Bot](https://github.com/MrHunter-lead/Hunters-Contract-Bot)
 
 ---
 
@@ -265,7 +265,7 @@ AI принимает финансовые решения **с полным ау
 | Telegram | Роль |
 |----------|------|
 | [@runshell](https://t.me/runshell) | Blockchain · Smart Contracts · Anchor |
-| [@tg_mogila](https://t.me/tg_mogila) | AI · Node.js Agent · Frontend |
+| [@tg_mogila](https://t.me/tg_mogil) | AI · Node.js Agent · Frontend |
 
 > *"Hunters Contracts — переход от идей к системе."*
 
